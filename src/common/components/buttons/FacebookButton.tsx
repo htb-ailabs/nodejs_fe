@@ -32,7 +32,7 @@ function FacebookIcon(props: React.ComponentPropsWithoutRef<"svg">) {
    );
 }
 
-const appId = "379865718525321";
+const appId = "612622178082630";
 
 export function FacebookButton(props: ButtonProps & React.ComponentPropsWithoutRef<"button">) {
    const dispatch = useAppDispatch();

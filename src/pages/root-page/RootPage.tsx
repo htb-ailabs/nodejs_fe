@@ -25,7 +25,7 @@ export default function RootPage({ children, title = "", meta, protect = false }
    const isRoute = useCheckRoute([ROUTER.LOGIN, ROUTER.REGISTER]);
    const location = useLocation();
    const networkStatus = useNetwork();
-   
+
    useEffect(() => {
       if (!networkStatus.online) {
          idToast = toast.info(`You are offline`, {
@@ -38,9 +38,9 @@ export default function RootPage({ children, title = "", meta, protect = false }
       }
    }, [networkStatus.online]);
 
-   useEffect(() => {
-      if (protect)  dispatch(getInfo());
-   }, [location]);
+   // useEffect(() => {
+   //    if (protect)  dispatch(getInfo());
+   // }, [location]);
 
    const renderContent = () => {
       if (isRoute) {
